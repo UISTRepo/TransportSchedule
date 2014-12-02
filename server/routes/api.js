@@ -15,6 +15,19 @@ router.get('/', function(req,res){
 
 });
 
+router.get('/transporters', function(req,res){
+
+    res.send('we are at transportersa API');
+
+});
+
+
+router.get('/transporters/:id', function(req,res){
+
+    res.send('we will return the data for' + req.params.id);
+
+});
+
 function _handleDbQuery(query, req, res){
     var dbCalls = [];
 
